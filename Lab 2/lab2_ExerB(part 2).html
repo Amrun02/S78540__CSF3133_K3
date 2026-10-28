@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Course Feedback</title>
+    </head>
+    <body>
+        <header>
+            <h1>CSF3133 Course Feedback</h1>
+        </header>
+        <nav>
+            <a href="#results">Results</a> | <a href="#form">Feedback Form</a> |
+            <a href="#comments">Comments</a>
+        </nav>
+        <section id="results">
+            <h2>Feedback Summary</h2>
+            <table border="1">
+                <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Introduction to HTML</td>
+                    <td>4.5</td>
+                <tr>
+                    <td>2</td>
+                    <td>Tables and Forms</td>
+                    <td>4.5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Semantic HTML</td>
+                    <td>4.0</td>
+                </tr>
+                <!--New table row and data for Mini Project-->
+                <tr>
+                    <td>4</td>
+                    <td rowspan="2">Mini Project</td>
+                    <td rowspan="2">4.0</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                </tr>
+                <!--New row for Average Rating-->
+                <tr>
+                    <td colspan="2">Average Rating</td>
+                    <td>4.2</td>
+                </tr>
+            </table>
+        </section>
+        <section id="form">
+            <h2>Give Your Feedback</h2>
+            <form action="submit_feedback.php" method="post">
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="name"><br>
+                
+                <!--Add email-->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="email">
+
+                <!--Add group-->
+                <label for="group">Group</label>
+                <select id="group" name="group">
+                    <option value="K1">K1</option>
+                    <option value="K2">K2</option>
+                    <option value="K3">K3</option>
+                    <option value="K4">K4</option>
+                </select>
+                
+                <label>Overall rating:</label><br>
+                <input type="radio" id="good" name="good" value="good">
+                <label for="good">Good</label>
+                <!--3rd radio option-->
+                <input type="radio" id="average" name="average" value="average">
+                <label for="average">Average</label>
+                <input type="radio" id="poor" name="poor" value="poor">
+                <label for="poor">Poor</label><br>
+                
+                <input type="checkbox" id="lab" name="lab" value="yes">
+                <label for="lab">I attended all labs</label><br>
+                <!--New checkbox-->
+                <input type="checkbox" id="practice" name="practice" value="practice">
+                <label for="practice">Topics I want more practice on</label>
+                <input type="checkbox" id="class" name="class" value="class">
+                <label for="class">I attended all classes</label>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <!--Add student comments-->
+        <section id="comments">
+            <h2>Student Comments</h2>
+            <article>
+                <h3>Ammirul Aiman bin Mustakim</h3>
+                <p>"I really enjoy learning Tables and Form."</p>
+            </article>
+            <article>
+                <h3>Ainnul hakimah binti Nordin</h3>
+                <p>"the Mini Project is so fun to do."</p>
+            </article>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2026 CSF3133</p>
+        </footer>
+    </body>
+</html>

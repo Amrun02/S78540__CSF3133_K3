@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Lab 2 Exercise A</title>
+    </head>
+
+    <header>
+        <!--Program Title-->
+        <h1>Career Ladder: Steps to Success</h1>
+    </header>
+
+    <nav>
+        <!--Navigate-->
+        <a href="#schedule">Schedule</a> | <a href="#register">Register</a> |
+        <a href="#about">About</a>
+    </nav>
+
+    <section id="about">
+        <h2>About the Event</h2>
+        <article>
+            <!--List of speakers-->
+            <h3>Mr. Hisyamuddin Abbas bin Mas'ud</h3>
+            <h4>Owner of Ayam Pintar Sdn. Bhd.</h4>
+            <p>
+                His effort from the age of 20 working with his sibling and closest friend
+                to built a successful business. Follow him in his talk about the ups and downs 
+                when starting the business.
+            </p>
+
+            <h3>Dato Hajah Lailatul Nisa' binti Nor Jamaluddin</h3>
+            <h4>CEO of Bestari Jaya Sdn. Bhd.</h4>
+            <p>
+                Our special guest come all the way from Johor Bharu to share her exerience
+                and tips on how to acheive success starting from zero.
+            </p>
+
+            <h3>Ir. Maryam Surihani binti Mohd Fauzan</h3>
+            <h4>Lead Engineer from Harum Seri Enterprise</h4>
+            <p>
+                From a rural village in Pahang, our honoured persue her dream to 
+                become an engineer and succeeded. Join her talk to listen her journey.
+            </p>
+        </article>
+
+        <article>
+            <!--List of activity-->
+            <h3>Activity</h3>
+            <ul>
+                <li>Deep talk with our honoured guests.</li>
+                <li>QnA session with our honoured guests.</li>
+                <li>Photograph session.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="schedule">
+        <!--Event flow-->
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td>9.00 a.m. - 11.00 a.m.</td>
+                <td>Talk with Mr. Hisyamuddin Abbas bin Mas'ud</td>
+                <td rowspan="2">Dewan Sultan Mizan, UMT</td>
+                <td>Wan Nusyahira binti Amanuddin (011-3345585)</td>
+            </tr>
+            <tr>
+                <td>11.00 a.m. - 1.00 p.m.</td>
+                <td>Talk with Dato Hajah Lailatul Nisa' binti Nor Jamaluddin</td>
+                <td>Nurul Insyirah bin Norwan (014-6335594)</td>
+            </tr>
+            <tr>
+                <td>1.00 p.m. - 2.00 p.m.</td>
+                <td colspan="3">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>2.00 p.m. - 4.00 p.m.</td>
+                <td>Talk with Ir. Maryam Surihani binti Mohd Fauzan</td>
+                <td>Dewan Sultan Mizan, UMT</td>
+                <td>Muhammad Khairul bin NorwAzman Hairi (012-9947556)</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="register">
+        <!--Register to join-->
+        <h2>Registration</h2>
+        <form action="./lab2_ExerA.html" method="post">
+            <label for="fullname">Name: </label><br>
+            <input type="text" id="fullname" name="fullname"> <br><br>
+            
+            <label for="metricnumber">Metric Number: </label><br>
+            <input type="text" id="metricnumber" name="metricnumber"><br><br>
+
+            <label for="year1">Year of Study: </label><br>
+            <input type="radio" id="year1" name="year1" value="year1">
+            <label for="year1">Year 1</label><br>
+            <input type="radio" id="year2" name="year2" value="year2">
+            <label for="year1">Year 2</label><br>
+            <input type="radio" id="year3" name="year3" value="year3">
+            <label for="year1">Year 3</label><br>
+            <input type="radio" id="year4" name="year4" value="year4">
+            <label for="year1">Year 4</label><br>
+            <input type="radio" id="foundation" name="foundation" value="foundation">
+            <label for="year1">Foundation</label><br>
+            <input type="radio" id="diploma" name="diploma" value="diploma">
+            <label for="year1">Diploma</label><br><br>
+
+            <h3>Talk Session</h3>
+            <p>Session 1: Mr. Hisyamuddin Abbas bin Mas'ud</p>
+            <p>Session 2: Dato Hajah Lailatul Nisa' binti Nor Jamaluddin</p>
+            <p>Session 3: Ir. Maryam Surihani binti Mohd Fauzan</p>
+
+            <label for="session1">Join Session: </label><br>
+            <label for="session1">Session 1 </label>
+            <input type="checkbox" id="session1" name="session1" value="session1"><br>
+
+            <label for="session2">Session 2 </label>
+            <input type="checkbox" id="session2" name="session2" value="session2"><br>
+
+            <label for="session1">Session 3 </label>
+            <input type="checkbox" id="session3" name="session3" value="session3"><br><br>
+
+            <label for="faculty">Faculty: </label>
+            <select id="faculty" name="faculty">
+                <option value="FTKK">FTKK</option>
+                <option value="FPM">FPM</option>
+                <option value="FSMA">FSMA</option>
+                <option value="FSPA">FSPA</option>
+                <option value="FSKM">FSKM</option>
+                <option value="FPEPS">FPEPS</option>
+                <option value="FSSM">FSSM</option>
+                <option value="PASTEM">PASTEM</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <!--Copyright-->
+        <p>Copyright &copy; COMTECH 2026</p>
+    </footer>
+</html>
