@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <title>Lab 3 Woderbuuk</title>
+    </head>
+    <body>
+        <div>
+        <nav>
+            <a href="#content-form">Contact Form</a> | <a href="#content-calculator">Calculator</a>
+        </nav>
+        </div>
+        
+        <div id="header">
+        <header>
+            <h1>Interactive Contact Form with an Inline Calculator</h1>
+            <span>Ease your trouble here!!</span>
+        </header>
+        </div>
+
+        <div id="content-form">
+            <h2>Interactive Contact Form</h2>
+            <form action="./lab3_Wonderbook.html" method="post">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="useremail">
+                <br><br>
+
+                <label for="date">Date: </label>
+                <input type="date" id="date" name="date">
+                <br><br>
+
+                <label for="satisfaction">Satisfaction: </label>
+                0<input type="range" min="0" max="10" step="1" value="0">10
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <div id="content-calculator">
+                <h2>Inline Calculator</h2>
+                <form oninput="z.value=parseFloat(x.value)+
+                parseFloat(y.value)">
+                <label for="num1">Input number: </label><br>
+                <input id="x" type="text" placeholder="0.0"><br> + <br>
+                <input id="y" type="text" placeholder="0.0">
+                <br> =
+                <output name="z" for="x y"></output>
+                </form>
+            </div>
+        </div>
+
+        <div id="footer">
+        <footer>
+            <hr>
+            Content belongs to S78540 - AmrunHariz &copy;
+            </hr>
+        </footer>
+        </div>
+    </body>
+</html>
