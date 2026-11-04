@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- Error 1 (Line 1): missing the html in <!DOCTYPE html> -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ticket Booking</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>e-Ticket <span>Your Campus Cinema</span></h1><!-- Error 1 (Line 9): Wrong tag arrangements-->
+        </div>
+        <div id="content"> <!-- Error 1 (Line 11): using span instead of div-->
+            <h2>Book Your Ticket</h2>
+            <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p> <!-- Error 1 and 2 (Line 13): missing the semicolon at (&amp;), not using &lt; -->
+            <form action="booking.php" oninput="total.value = adult.value + child.value">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"><br> <!-- Error 1 (Line 18): Wrong type spelling-->
+                <label for="tel">Phone Number:</label>
+                <input type="tel" id="tel" name="tel" placeholder="012 - 3456 7890" required><br>
+                <label for="date">Show date:</label>
+                <input type="date" id="date" name="date"><br>
+                <label for="movie">Movie:</label>
+                <input id="movie" name="movie" list="movies"><br>
+                <datalist id="movies"> <!-- Error 1 (Line 23): The list attribute of the input element must refer to a datalist element -->
+                <option value="Space Rangers">
+                <option value="Kampung Comedy">
+                </datalist>
+            </form>
+            <form oninput="total.value = parseInt(adult.value || 0) + parseInt(child.value || 0);
+            price.value = (parseInt(adult.value || 0) * 12) + (parseInt(child.value || 0) * 8);">
+                <label for="adult">Adult tickets:</label>
+                <input type="number" id="adult" name="adult" value="0"><br>
+                <label for="child">Child tickets:</label>
+                <input type="number" id="child" name="child" value="0"><br>
+                <label for="rating">Rate our service:</label>
+                <input type="range" id="rating" name="rating" min="5" max="1"><br>
+                Total tickets: <output name="total" for="adult kid"></output><br>
+                Total price: RM <output name="price" id="price"></output><br><br>
+                <input type="submit" value="Book Now">
+            </form>    
+        </div>
+        <div id="sidebar">
+            <h2>Now Showing</h2>
+            <ul>
+                <li>
+                    <strong>Clayface <span>R18</span></strong><br>
+                    <a href="https://youtu.be/OGO4Mqvo3jI?si=1cExgk6F0hDAiGpv">Clayface Trailer</a>
+                </li>
+                <li>
+                    <strong>Godzilla Minus Zero <span>PG16</span></strong><br>
+                    <a href="https://youtu.be/B-cZQN06bCM?si=0vIpFfOOJC-LkAYq">Godzilla Minus Zero Trailer</a>
+                </li>
+                <li>
+                    <strong>Mutiny <span>R18</span></strong><br>
+                    <a href="https://youtu.be/FKSdXH89jbo?si=QPM_j2Vwq-G5IbyV">Mutiny Trailer</a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer">
+            <p>e-Ticket&reg; &mdash; Campus Cinema &lt; RM10 every Teusday</p>
+            <p>&Copy; 2026 CineKampus. All rights reserved.</p>
+        </div>
+    </body>
+</html>

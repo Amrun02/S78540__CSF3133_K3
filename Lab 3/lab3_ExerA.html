@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <title>Lab 3 Exercise A</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Chocacake<span>Sweets by the beach!</span></h1>
+        </div>
+
+        <!--navigate around the page-->
+        <div id="nav">
+            <a href="#about">About Us</a> | <a href="#specialty">Specialty</a> |
+            <a href="#order">Order</a> | <a href="#calculator">Calculator</a>
+        </div>
+        <div id="content">
+
+            <!--tell reader aout the shop-->
+            <div id="about">
+                <h2>About Us</h2>
+                <p>
+                    We provide freshly baked good for you to enjoy while strolling around the beach. 
+                    Here we baked using the <strong>best product to produced the best pastries</strong>.
+                    Come visit us here at <a href="https://maps.app.goo.gl/Z5LCw2MwC1KLfcvMA">Chocacake</a> to enjoy these <em>lovely sweets</em>. 
+                </p>
+            </div>
+            
+            <div id="specialty">
+                <h2>Our Specialty</h2>
+                <ul>
+                    <li>Pair your own Bagel</li>
+                    <li>Chonky Cookies</li>
+                </ul>
+            </div>
+
+            <!--get input from user for cake order-->
+            <div id="order">
+                <h2>Order Your Cake</h2>
+                <form action="./lab3_ExerA.html" method="post">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name"
+                    placeholder="Johnny Deppt" autofocus required><br>
+
+                    <label for="hp-num">Phone Number: </label>
+                    <input type="tel" id="hp-num" name="hp-num" 
+                    placeholder="(+60)12 3456 7890" required><br>
+
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email"
+                    placeholder="example@test.com" required><br>
+
+                    <label for="pickup-date">Pick-up Date: </label>
+                    <input type="date" id="pickup-date" name="pickup-date"><br>
+
+                    <label for="pickup-time">Pick-up Time: </label>
+                    <input type="time" id="pickup-time" name="pickup-time"><br>
+
+                    <label for="flavour">Flavour: </label>
+                    <input list="flavours" id="flavour" name="flavour">
+                    <datalist id="flavours">
+                        <option value="chocolate">Chocolate</option>
+                        <option value="vanilla">Vanilla</option>
+                        <option value="redvalvet">Red Valvet</option>
+                        <option value="cheese">Cheese Cake</option>
+                    </datalist><br>
+
+                    <label for="icing">Icing: </label>
+                    <input type="color" id="icing" name="icing"><br>
+
+                    <label for="sweetness">Sweetness: </label>
+                    1<input type="range" id="sweetness" name="sweetness" 
+                    min="1" max="5" step="1">5<br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <!--price calculator-->
+            <div id="calculator">
+                <h2>Price Calculator</h2>
+                <form oninput="totalPrice.value = (parseInt(cupcakes.value || 0) * 3) + (parseInt(cakeSlices.value || 0) * 5)">
+                    
+                    <!--get input number of cupcake-->
+                    <label for="cupcakes">Cupcakes (RM 3.00 each):</label>
+                    <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+                    <br>
+
+                    <!--get number of cake slices-->
+                    <label for="cakeSlices">Cake Slices (RM 5.00 each):</label>
+                    <input type="number" id="cakeSlices" name="cakeSlices" min="0" value="0">
+                    <br>
+                    
+                    <label for="totalPrice">Total Price (RM): </label>
+                    <output name="totalPrice" id="totalPrice" for="cupcakes cakeSlices">0</output>
+                </form>
+            </div>
+        </div>
+
+        <!--display the price list in side bar-->
+        <div id="sidebar">
+            <div id="pricelist">
+                <h2>Price List</h2>
+                <ol>
+                    <li>Plain Medeliene (RM 5.00)</li>
+                    <li>Cinnamon Sugar Medeliene (RM 5.50)</li>
+                    <li>Lemon Rose Medeliene (RM 6.50)</li>
+                    <li>Sconeset (RM 12.00/2pcs)</li>
+                    <li>Respberry Chocomel Tart (RM 11.00)</li>
+                </ol>
+            </div>
+        </div>
+
+        <!--footer of page-->
+        <div id="footer">
+            Chocacake&copy;&reg; 2026&nbsp;Sweets by the Beach&trade;
+        </div>
+    </body>
+</html>
