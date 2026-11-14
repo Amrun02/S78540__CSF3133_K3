@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 4 Wonderbuuk</title>
+        <link rel="stylesheet" href="design.css">
+    </head>
+    <body>
+        <header>
+            <h1>Favourite Hobbies</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#hobby">What is a Hobby?</a></li>
+                <li><a href="#videos">Watch a Video</a></li>
+                <li><a href="#form">Fill in your details</a></li>
+            </ul>
+        </nav>
+        <div class="content" id="hobby">
+            <section>
+                <h2>What is a hobby?</h2>
+                <p>
+                    A hobby is a regular activity performed for pleasure, relaxation, 
+                    or personal growth during your free time, rather than as a primary job.
+                </p>
+                <article>
+                    <h3>Types of Hobbies</h3>
+                    <ul>
+                        <li>Creative and Crafting</li>
+                        <li>Physical Activities</li>
+                        <li>Collecting</li>
+                        <li>Social Activities</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+        <div class="content" id="videos">
+            <h2>Watch a Video about Hobbies</h2>
+            <video width="200" height="355" controls>
+                <source src="./Hobbies.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content" id="form">
+            <h2>Fill in your details</h2>
+            <form class="form" action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                </div>
+
+                <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                </fieldset>
+
+                <fieldset>
+                <legend>Favourite Hobby:</legend>
+                <label><input type="checkbox" id="reading" name="hobby" value="reading">Reading</label>
+                <label><input type="checkbox" id="travelling" name="hobby" value="travelling">Travelling</label>
+                <label><input type="checkbox" id="cooking" name="hobby" value="cooking">Cooking</label>
+                <label><input type="checkbox" id="sports" name="hobby" value="sports">Sports</label><br>
+                <label for="other">Other:</label>
+                <input type="text" id="other" name="other"><br>
+                </fieldset>
+
+                <input id="submit" type="submit" value="Submit">
+            </form> 
+        </div>
+        <footer>
+            <hr>
+            Content belong to S78540 - AmrunHariz&copy;
+        </footer>
+    </body>
+</html>

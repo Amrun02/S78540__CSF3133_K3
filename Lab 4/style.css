@@ -1,0 +1,222 @@
+/* Base page layout */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    color: #26332f;
+    background-color: #edf5f1;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #d3e8df;
+}
+
+h1 {
+    color: #174f3b;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #20634c;
+    text-decoration: underline;
+}
+
+/* Section navigation */
+nav {
+    padding: 0.5rem;
+    background-color: #174f3b;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 0.65rem 1rem;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #2f8061;
+}
+
+/* Interactive link states: keep this order */
+a:link {
+    color: #d9f2e7;
+}
+
+a:visited {
+    color: #eadcf5;
+}
+
+a:hover {
+    color: #fff2bd;
+}
+
+a:active {
+    color: #ffc9b8;
+}
+
+/* Destination cards and promotion prices */
+section {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#destinations {
+    background-color: #f5fbf7;
+}
+
+.destination-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1 1 250px;
+    padding: 1rem;
+    border: 1px solid #b7d3c6;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.card h3 {
+    color: #174f3b;
+}
+
+.promotion {
+    font-weight: bold;
+}
+
+.old-price {
+    margin-right: 0.5rem;
+    color: #6b7470;
+    text-decoration: line-through;
+}
+
+.price {
+    color: #a13724;
+    font-size: 1.15rem;
+}
+
+meter {
+    display: block;
+    width: 100%;
+    margin-top: 0.35rem;
+}
+
+/* Responsive video and caption */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    margin-top: 0.5rem;
+    color: #52635b;
+    font-style: italic;
+}
+
+/* Trip enquiry form */
+.trip-form {
+    width: 90%;
+    max-width: 650px;
+    margin: 1rem auto 0;
+    padding: 1.25rem;
+    border: 1px solid #9dbbaa;
+    border-radius: 6px;
+    background-color: #f2f8f4;
+}
+
+.form-field {
+    margin-bottom: 1rem;
+}
+
+.form-field > label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 0.55rem;
+    border: 1px solid #9aa9a1;
+    border-radius: 4px;
+}
+
+fieldset {
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border: 1px solid #b7d3c6;
+}
+
+fieldset label {
+    margin-right: 0.75rem;
+}
+
+button {
+    padding: 0.65rem 1.2rem;
+    color: #fff;
+    background-color: #20634c;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174f3b;
+}
+
+footer address {
+    margin-top: 0.5rem;
+}
+
+/* Stack navigation and form options on narrow screens */
+@media (max-width: 600px) {
+    body {
+        width: 95%;
+    }
+
+    header,
+    footer,
+    section {
+        padding: 1rem;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    fieldset label {
+        display: block;
+        margin: 0.35rem 0;
+    }
+}

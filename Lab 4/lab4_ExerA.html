@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Page-specific accents */
+        #page-title {
+            letter-spacing: 0.08em;
+        }
+
+        #trip .form-intro {
+            color: #35524a;
+        }
+    </style>
+    <title>Visit Perak</title>
+</head>
+<body>
+    <!-- Site header -->
+    <header>
+        <h1 id="page-title">Visit Perak</h1>
+        <p>Explore the diverse Malaysian state packed with colonial history,
+            cave temples, lush nature, and island getaways.</p>
+    </header>
+
+    <!-- Section navigation -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Trip</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Destination cards and available seat counts -->
+        <section id="destinations">
+            <h2>Visit Destinations</h2>
+            <p>Come and explore our local attractions.</p>
+
+            <div class="destination-list">
+                <article class="card">
+                    <h3>Ipoh</h3>
+                    <p>The state capital, known for its colonial history, cave temples, and local food.</p>
+                    <p class="promotion">Promotion: <span class="old-price">RM 200</span>
+                        <span class="price">RM 150</span></p>
+                    <label for="capacity-ipoh">Tour seats filled (maximum 40):</label>
+                    <meter id="capacity-ipoh" min="0" max="40" value="28">28 of 40 seats</meter>
+                </article>
+
+                <article class="card">
+                    <h3>Taiping</h3>
+                    <p>A historic town 48 km north of Ipoh, with gardens and a rich heritage.</p>
+                    <p class="promotion">Promotion: <span class="old-price">RM 150</span>
+                        <span class="price">RM 100</span></p>
+                    <label for="capacity-taiping">Tour seats filled (maximum 40):</label>
+                    <meter id="capacity-taiping" min="0" max="40" value="20">20 of 40 seats</meter>
+                </article>
+
+                <article class="card">
+                    <h3>Teluk Intan</h3>
+                    <p>A riverside town in Hilir Perak, famous for its leaning clock tower.</p>
+                    <p class="promotion">Promotion: <span class="old-price">RM 180</span>
+                        <span class="price">RM 120</span></p>
+                    <label for="capacity-teluk-intan">Tour seats filled (maximum 40):</label>
+                    <meter id="capacity-teluk-intan" min="0" max="40" value="30">30 of 40 seats</meter>
+                </article>
+            </div>
+        </section>
+
+        <!-- Perak travel video -->
+        <section id="video">
+            <h2>Watch a Video about Perak</h2>
+            <figure>
+                <video width="640" height="360" controls>
+                    <source src="./Visit_Perak.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption class="caption">Discover the sights and experiences of Perak.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Trip enquiry form -->
+        <section id="trip">
+            <h2>Plan Your Trip</h2>
+            <p class="form-intro">Tell us a little about yourself and your travel interests.</p>
+            <form class="trip-form" action="#" method="get">
+                <div class="form-field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <fieldset>
+                    <legend>Traveller type:</legend>
+                    <label><input type="radio" name="traveller-type" value="student"> Student</label>
+                    <label><input type="radio" name="traveller-type" value="staff"> Staff</label>
+                    <label><input type="radio" name="traveller-type" value="public"> Public</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <label><input type="checkbox" name="interest" value="islands"> Islands</label>
+                    <label><input type="checkbox" name="interest" value="food"> Food</label>
+                    <label><input type="checkbox" name="interest" value="culture"> Culture</label>
+                    <label><input type="checkbox" name="interest" value="nature"> Nature</label>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Copyright and contact information -->
+    <footer>
+        <p>Content belongs to S78540 - AmrunHariz &copy;</p>
+        <address><a href="mailto:tour@test.com">Contact us</a></address>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,178 @@
+body{
+    font-family: Trebuchet MS, sans-serif;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    color: #26332f;
+    background-color: #f6ddff;
+    line-height: 1.6;
+}
+
+header, footer {
+    padding: 2px;
+    text-align: center;
+    background-color: #c8b3e2;
+}
+
+h1{
+    color: #3a174f;
+    font-family: Luminari, fantasy;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #3a174f;
+    font-family: Luminari, fantasy;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+nav {
+    padding: 1px;
+    background-color: #3a174f;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #c8b3e2;
+}
+
+a:link {
+    color: #f6ddff;
+}
+
+a:visited {
+    color: #3a174f;
+}
+
+a:hover {
+    color: #3a174f;
+}
+
+a:active {
+    color: #3a174f;
+}
+
+.content {
+    margin: 20px;
+    padding: 30px 40px;
+    text-align: left;
+    background-color: #fdfaff;
+    border-radius: 25px;
+}
+
+.content p {
+    padding: 0;
+    margin: 0 auto 30px auto;
+    max-width: 750px;
+    text-align: center;
+}
+
+h3 {
+    color: #3a174f;
+    font-family: Luminari, fantasy;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article ul {
+    list-style-type: square;
+    margin: 0;
+    padding-left: 22px; /* Aligns bullets neatly under the h3 heading */
+    padding-top: 0;
+}
+
+article li {
+    margin-bottom: 6px;
+}
+
+video{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+form {
+    background-color: #f6ddff;
+    border: 1px solid #3a174f;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 20px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    color: #1f2d27;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box; /* Keeps input aligned with fieldsets */
+    padding: 0.65rem;
+    border: 1px solid #3a174f;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+fieldset {
+    margin: 1.25rem 0;
+    padding: 0.85rem 1rem 1rem 1rem;
+    border: 1px solid #3a174f;
+}
+
+legend {
+    padding: 0 0.35rem;
+    color: #3a174f;
+}
+
+fieldset label {
+    margin-right: 1.25rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    cursor: pointer;
+}
+
+#submit {
+    padding: 0.7rem 1.4rem;
+    color: #ffffff;
+    background-color: #770ab6; /* Dark forest green button */
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+#submit:hover {
+    background-color: #3a174f;
+}
