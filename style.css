@@ -1,0 +1,143 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Header Banner */
+header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: #ffffff;
+    padding: 45px 0;
+    text-align: center;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    font-size: 1rem;
+    margin-top: 6px;
+}
+
+/* Lab Section Cards */
+.lab-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+
+.lab-card h2 {
+    font-size: 1.3rem;
+    color: #0f172a;
+    border-left: 4px solid #2563eb;
+    padding-left: 12px;
+    margin-bottom: 18px;
+}
+
+/* Ordered List Items */
+.lab-card ol {
+    list-style-position: inside;
+}
+
+.lab-card li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 10px;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background-color 0.2s ease;
+}
+
+.lab-card li:last-child {
+    border-bottom: none;
+}
+
+.lab-card li:hover {
+    background-color: #f8fafc;
+    border-radius: 6px;
+}
+
+.task-name {
+    font-weight: 500;
+    color: #334155;
+}
+
+/* Link Buttons */
+.links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+/* GitHub / Code Button */
+.btn-code {
+    background-color: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+}
+
+.btn-code:hover {
+    background-color: #e2e8f0;
+    color: #0f172a;
+}
+
+/* Live Website Button */
+.btn-live {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn-live:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 0 40px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+    .lab-card li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
