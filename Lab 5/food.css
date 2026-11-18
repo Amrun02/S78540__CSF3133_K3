@@ -1,0 +1,149 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FBF7F0;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Header Section */
+header {
+    background-image: url(header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    margin: 0 0 8px 0;
+    padding-bottom: 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+#food-fest {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Navigation Bar */
+nav {
+    background-color: #333333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: #E67E22;
+}
+
+nav a.active {
+    background-color: #E67E22;
+}
+
+/* Main Content Area */
+#content {
+    text-align: justify;
+    line-height: 1.5;
+    width: 90%;
+    max-width: 980px;
+    margin: 30px auto;
+}
+
+/* 3. Section Headings */
+h2 {
+    color: #1B4F72;
+    border-left: 4px solid #E67E22;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* 4. Callout / Notice Box */
+.notice, #notice {
+    background-color: #FDEBD0;
+    border: 1px solid #F5CBA7;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+/* 5. Menu Table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #E0E0E0;
+    padding: 10px 12px;
+}
+
+th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+td {
+    text-align: left;
+}
+
+td:nth-child(4) {
+    text-align: right;
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+tr:hover {
+    background-color: #FDEBD0;
+}
+
+/* 6. Footer */
+footer {
+    background-color: #EFE6D8;
+    text-align: center;
+    font-size: 13px;
+    padding: 16px;
+    margin-top: 40px;
+}

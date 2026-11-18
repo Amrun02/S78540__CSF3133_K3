@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f9;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(umt-images.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #005599;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav li a:hover {
+    background-color: #ff9900;
+    color: #003366;
+}
+
+.info {
+    width: 85%;
+    max-width: 900px;
+    margin: 25px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #dddddd;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #003366;
+    margin-top: 0;
+}
+
+p, #about {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f6fa;
+}
+
+tr:hover {
+    background-color: #e2ecf5;
+}
+
+footer {
+    background-color: #e0e6ed;
+    color: #333333;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
