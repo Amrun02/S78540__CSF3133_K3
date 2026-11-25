@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Food Quiz</title>
+    <link href="style_lab6.css" rel="stylesheet">
+</head>
+<body> 
+    <!-- Header introducing the quiz -->
+    <header id="home">
+        <h1>Easy Food Quiz</h1>
+        <p>Test your food knowledge!</p>
+    </header>
+
+    <!-- Quiz section: questions, answer options, and timer -->
+    <section id="quiz">
+        <div class="quiz-header">
+            <span id="question-number">Question 1 of 5</span>
+            <span id="timer">Time Left: 15s</span>
+        </div>
+
+        <h2 id="question-text">Question loads here...</h2>
+        <div id="options-container"></div>
+
+        <!-- Buttons to submit answer and navigate -->
+        <div class="controls">
+            <button id="submit-btn" onclick="checkAnswer()">Submit Answer</button>
+            <button id="next-btn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+        </div>
+    </section>
+
+    <!-- Feedback section -->
+    <section id="feedback">
+        <p id="feedback-text"></p>
+    </section>
+
+    <!-- Footer displaying user's score -->
+    <footer>
+        <p id="score-display">Score: 0 / 5</p>
+        <p>&copy; 2026 S78540 | Universiti Malaysia Terengganu</p>
+    </footer>
+
+    <script src="script_lab6.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* General page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F4F6F8;
+    padding: 25px;
+    margin: 0;
+    color: #333333;
+}
+
+/* Main page title */
+h1 {
+    color: #1B4F72;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+/* White card container around the form */
+form {
+    background-color: #ffffff;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    padding: 20px;
+    max-width: 440px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Stacked bold labels above inputs */
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #222222;
+}
+
+/* Text input fields */
+input[type="text"] {
+    width: 100%;
+    max-width: 310px;
+    padding: 9px 10px;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+}
+
+/* Blue buttons with hover effect */
+button {
+    background-color: #2E86C1;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+button:hover {
+    background-color: #1B4F72;
+}
+
+/* Result and timestamp lines */
+#result, #checkTime {
+    font-weight: bold;
+    font-size: 17px;
+    margin: 4px 0;
+}
+
+#checkTime {
+    margin-bottom: 20px;
+}
+
+/* Grade table styling */
+table {
+    border-collapse: collapse;
+    margin-top: 12px;
+    width: 300px;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #E0E0E0;
+    padding: 9px 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1B4F72;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #F8F9F9;
+}
+
+tr:hover {
+    background-color: #d0e6fd;
+}

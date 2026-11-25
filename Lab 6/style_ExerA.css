@@ -1,0 +1,176 @@
+/* General page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F4F6F8;
+    padding: 20px;
+    margin: 0;
+    color: #333333;
+}
+
+/* Full-width card layout matching the reference screenshot */
+header, section {
+    background: #ffffff;
+    width: 100%;
+    max-width: 1150px;
+    padding: 18px 22px;
+    margin: 0 auto 15px auto;
+    border-radius: 6px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1B4F72;
+    color: #ffffff;
+    border: none;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 26px;
+}
+
+header p {
+    margin: 0;
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    color: #777777;
+    margin-top: 20px;
+}
+
+/* Input and button styling */
+label {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+input {
+    padding: 7px 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 6px;
+    width: 180px;
+}
+
+button {
+    color: #ffffff;
+    background-color: #2E86C1;
+    padding: 8px 14px;
+    border-radius: 4px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+button:hover {
+    background-color: #1B4F72;
+}
+
+#welcomeMsg {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #1B4F72;
+    font-size: 14px;
+}
+
+/* Image display area and fixed image sizing */
+#picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin: 15px 0 10px 0;
+    text-align: center;
+}
+
+.player-box p {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+}
+
+#playerImg, #computerImg {
+    width: 95px;
+    height: 95px;
+    border-radius: 14px;
+    object-fit: cover;
+    display: block;
+}
+
+.vs-text {
+    font-weight: bold;
+    font-size: 20px;
+    color: #888888;
+    margin-top: 24px;
+}
+
+/* Scoreboard and result styling */
+#result {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+
+#result:empty {
+    display: none;
+}
+
+.score-line {
+    margin: 0;
+    font-size: 14px;
+}
+
+.score-line span {
+    margin-right: 12px;
+}
+
+/* History table and bottom buttons */
+#history-section h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+}
+
+th, td {
+    border: 1px solid #E0E0E0;
+    padding: 8px;
+    text-align: center;
+    width: 25%;
+}
+
+th {
+    background-color: #1B4F72;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F8F9F9;
+}
+
+tr:hover {
+    background-color: #d0e6fd;
+}
+
+.history-buttons {
+    margin-top: 12px;
+}
+
+#summary {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#summary:empty {
+    display: none;
+}

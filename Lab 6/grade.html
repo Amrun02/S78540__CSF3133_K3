@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Grade Calculator</title>
+        <link rel="stylesheet" href="grade.css"> <!-- (New) Link external CSS -->
+    </head>
+    <body>
+        <h1>Student Grade Calculator</h1> <!-- Error 1 (grade.html, Line 8): First heading element should be h1 -->
+        <form name="gradeForm" onsubmit="return checkMark()"> <!-- Error 2 (grade.html, Line 9): Missing return statement-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="mark">Mark (0-100):</label>
+            <input type="text" id="mark" name="mark"><br>
+            <button type="submit">Check Grade</button>
+            <button type="button" onclick="randomMark()">Random Mark</button> <!-- (New) Generate random number on click-->
+        </form>
+        <p id="result"></p>
+        <p id="checkTime"></p> <!-- (New) Adds check time-->
+        <button onclick="showTable()">Show Grade Table</button> <!-- Error 3 (grade.html, Line 17): Wrong function name-->
+        
+        <div id="tableContainer"></div>
+        <script src="grade.js"></script><!-- Error 4 (grade.html, Line 19): wrong file name-->
+    </body>
+</html>
